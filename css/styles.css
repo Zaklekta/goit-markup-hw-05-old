@@ -121,7 +121,7 @@ header {
 .nav-link.current::after {
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
 
   display: block;
@@ -149,6 +149,7 @@ header {
 .contacts-icon {
   fill: var(--text-color);
   margin-right: 10px;
+  transition: fill var(--transition-general);
 }
 
 .nav-link:hover,
@@ -215,6 +216,8 @@ header {
   background-color: var(--accent-color);
   border-radius: 4px;
   border-color: transparent;
+
+  transition: background-color var(--transition-general);
 }
 .hero-btn:hover,
 .hero-btn:focus {
